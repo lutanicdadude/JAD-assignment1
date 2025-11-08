@@ -28,7 +28,7 @@
 	      </form>
 	      <div class="text-center mt-3">
 	        <a href="#" class="text-success">Forgot password?</a><br>
-	        <small>New here? <a href="#" class="text-success">Create an account</a></small>
+	        <small>New here? <a href="../register/registerPage.jsp" class="text-success">Create an account</a></small>
 	      </div>
 	    </div>
 	</main>
