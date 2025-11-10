@@ -27,7 +27,7 @@
 	        <button type="submit" class="btn btn-login mt-2">Login</button>
 	      </form>
 	      <div class="text-center mt-3">
-	        <a href="#" class="text-success">Forgot password?</a><br>
+	        <a href="../resetPassword/resetPassword.jsp" class="text-success">Forgot password?</a><br>
 	        <small>New here? <a href="../register/registerPage.jsp" class="text-success">Create an account</a></small>
 	      </div>
 	    </div>
