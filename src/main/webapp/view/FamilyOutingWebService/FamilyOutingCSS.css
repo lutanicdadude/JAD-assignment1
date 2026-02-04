@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Body and font */
+body {
+  background-color: #f5f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Header and footer */
+header {
+  background-color: #88b77b;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer {
+  background-color: #88b77b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+/* Cards */
+.card, .outing-card {
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #88b77b;
+  border-color: #88b77b;
+}
+
+.btn-primary:hover {
+  background-color: #659c55;
+  border-color: #659c55;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #cccccc;
+  color: #333;
+}
+
+/* Status badges */
+.status-badge.bg-success {
+  background-color: #88b77b !important;
+}
+
+.status-badge.bg-warning.text-dark {
+  background-color: #f0e68c !important;
+  color: #333 !important;
+}
+
+/* Input enhancements */
+#visitorName {
+  border: 1px solid #88b77b;
+}
+
+#visitorName:focus {
+  border-color: #659c55;
+  box-shadow: 0 0 3px rgba(101,156,85,0.6);
+}
+
+.left-section h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.left-section p {
+    margin: 0;
+    margin-top: 4px;
+    color: #6c757d;
+}
+
+.logout-btn {
+    background-color: #ffffff;
+    color: #4a7c59;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e8ffe8;
+}
+    
+.outing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.status-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.label-muted {
+    font-size: 0.85rem;
+    color: #6c757d;
+}

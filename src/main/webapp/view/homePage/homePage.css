@@ -1,0 +1,80 @@
+ body {
+      background-color: #f5f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-color: #88b77b;
+      color: white;
+      padding: 1rem 0;
+    }
+    
+    .header-container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 0 2rem; 
+	}
+	
+	/* Logout button styling */
+	.logout-btn {
+	  background-color: #ffffff;
+	  color: #4a7c59;
+	  border: none;
+	  padding: 8px 16px;
+	  border-radius: 8px;
+	  cursor: pointer;
+	  font-weight: bold;
+	  transition: 0.3s;
+	}
+	
+	.logout-btn:hover {
+	  background-color: #e8ffe8;
+	}
+
+    footer {
+      background-color: #88b77b;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    .welcome-section {
+      background-color: #a4c89a;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn-primary {
+      background-color: #88b77b;
+      border-color: #88b77b;
+    }
+
+    .btn-primary:hover {
+      background-color: #659c55;
+      border-color: #659c55;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover {
+      text-decoration: underline;
+    }

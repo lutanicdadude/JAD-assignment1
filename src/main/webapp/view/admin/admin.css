@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body { background-color: #f5f9fc; color: #333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+header, footer { background-color: #88b77b; color: #fff; padding: 1rem 0; }
+footer { text-align: center; margin-top: 3rem; }
+.welcome-section { background-color: #a4c89a; border-radius: 1rem; padding: 2rem; }
+
+.card.kpi { border: none; border-radius: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,.08); }
+.kpi-title { font-size: .85rem; color: #6b6b6b; }
+.kpi-value { font-size: 1.6rem; font-weight: 700; }
+
+.nav-tabs .nav-link.active { background-color: #e8f2e6; border-color: #dee2e6 #dee2e6 #fff; }
+.tab-content { border: 1px solid #dee2e6; border-top: none; border-radius: 0 0 .5rem .5rem; }
+
+.table thead th { font-weight: 600; }
+.btn-primary { background-color: #88b77b; border-color: #88b77b; }
+.btn-primary:hover { background-color: #659c55; border-color: #659c55; }
+.btn-outline-success { color: #659c55; border-color: #88b77b; }
+.btn-outline-success:hover { background: #88b77b; color: #fff; }

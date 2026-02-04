@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* Match your green theme (same as home page) */
+body {
+  background-color: #f5f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #88b77b;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer {
+  background-color: #88b77b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.welcome-section {
+  background-color: #a4c89a;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover { transform: translateY(-4px); }
+
+.btn-primary {
+  background-color: #88b77b;
+  border-color: #88b77b;
+}
+
+.btn-primary:hover {
+  background-color: #659c55;
+  border-color: #659c55;
+}
+
+.list-group-item {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.btn-outline-success {
+  color: #659c55;
+  border-color: #88b77b;
+}
+
+.btn-outline-success:hover {
+  background-color: #88b77b;
+  color: white;
+}
