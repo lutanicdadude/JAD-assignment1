@@ -57,6 +57,8 @@ public class ValidatePayment extends HttpServlet {
       String startTime = request.getParameter("startTime");
       String endTime = request.getParameter("endTime");
       String additionalNotes = request.getParameter("additionalNotes");
+      int numOfParticipants = Integer.parseInt(request.getParameter("participants"));
+      String location = request.getParameter("outingLocation");
       System.out.println("duration: " + request.getParameter("duration"));
       double duration = Double.parseDouble(request.getParameter("duration")); 
   
@@ -77,7 +79,7 @@ public class ValidatePayment extends HttpServlet {
       
       // Call DAO to insert data
       PaymentDAO dao = new PaymentDAO();
-      boolean success = dao.insertPayment(email, serviceType, preferredDateStr, startTime, endTime, duration, additionalNotes);
+      boolean success = dao.insertPayment(email, serviceType, preferredDateStr, startTime, endTime, duration, additionalNotes, numOfParticipants, location);
       
       if (success) {
         request.getRequestDispatcher("/view/payment/paymentSuccess.jsp")

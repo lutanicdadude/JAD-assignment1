@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.FamilyOuting" %>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -115,6 +116,20 @@
                                 int minutes = (duration % 3600) / 60;
                             %>
                             <div><%= hours %>hr <%= minutes %>min</div>
+                        </div>
+                        
+                        <div class="mb-2">
+                            <div class="label-muted">Number of Participants</div>
+                            <div>
+                                <%= fo.getNumOfParticipants()%>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-2">
+                            <div class="label-muted">Location</div>
+                            <div>
+                                <%= fo.getLocation()%>
+                            </div>
                         </div>
 
                         <div class="mb-3">

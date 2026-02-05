@@ -14,6 +14,21 @@ P2429564 -->
     String endTime = request.getParameter("endTime");
     String additionalNotes = request.getParameter("additionalNotes");
     String amount = (String) session.getAttribute("servicePrice");
+
+    String participantsStr = request.getParameter("participants");
+    int numOfParticipants = 0; // default value
+
+    if (participantsStr != null && !participantsStr.isEmpty()) {
+        numOfParticipants = Integer.parseInt(participantsStr);
+    }
+    
+    String locationStr = (String) request.getParameter("outingLocation");
+    String location = ""; // default value
+
+    if (locationStr != null && !locationStr.isEmpty()) {
+      location = locationStr;
+    }
+    
     if (amount == null) amount = "0.00";
     
     //Convert String to local time
@@ -145,6 +160,8 @@ P2429564 -->
                         <input type="hidden" name="duration" value="<%= seconds %>">
                         <input type="hidden" name="additionalNotes" value="<%= additionalNotes %>">
     					<input type="hidden" name="servicePrice" value="${servicePrice}">
+    					<input type="hidden" name="participants" value="<%= numOfParticipants %>">
+    					<input type="hidden" name="outingLocation" value="<%= location %>">
 
                         <div class="col-12">
                             <label for="cardName" class="form-label">Name on Card</label>

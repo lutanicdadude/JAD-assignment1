@@ -6,12 +6,12 @@ import util.connectDatabase;
 
 public class PaymentDAO {
 
-  public boolean insertPayment(String email, String serviceName, String serviceDate, String serviceStart, String serviceEnd, double duration, String additionalNotes) {
+  public boolean insertPayment(String email, String serviceName, String serviceDate, String serviceStart, String serviceEnd, double duration, String additionalNotes, int numOfParticipants, String location) {
 
       String sql = """
           INSERT INTO booking_service
-          (email, service_name, service_date, service_start, service_end, service_duration, additional_notes, status)
-          VALUES (?, ?, ?, ?, ?, ?, ?, 'pending')
+          (email, service_name, service_date, service_start, service_end, service_duration, additional_notes, status, numOfParticipants, location)
+          VALUES (?, ?, ?, ?, ?, ?, ?, 'pending', ?, ?)
       """;
 
       try (Connection conn = connectDatabase.getConnection();
@@ -32,6 +32,8 @@ public class PaymentDAO {
           ps.setString(5, serviceEnd);
           ps.setDouble(6, duration);
           ps.setString(7, additionalNotes);
+          ps.setInt(8, numOfParticipants);
+          ps.setString(9, location);
 
           return ps.executeUpdate() > 0; // true if inserted
 
